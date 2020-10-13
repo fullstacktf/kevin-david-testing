@@ -1,15 +1,20 @@
 const moneyFormat = require("./moneyFormat");
 
-assertEquals(moneyFormat(19.99), '$19.99')
+describe("formatMoney", () => {
+    it("formats in $", () => {
+        const result1 = moneyFormat(900);
+        expect(result1).toEqual("$900.00");
+    });
 
-assertEquals(moneyFormat(250), '$250.00')
+    it("formats in $", () => {
+        const result1 = moneyFormat(250);
+        expect(result1).toEqual("$250.00");
+    });
 
-assertEquals(moneyFormat(9500.95), '$9500.95')
+    it("formats in $", () => {
+        const result1 = moneyFormat(9500.95);
+        expect(result1).toEqual("$9500.95");
+    });
 
-function assertEquals(result, expectedResult) {
-    if (result != expectedResult) {
-        throw new Error(
-            `This test is failing: Expected "${expectedResult}", got "${result}"`,
-        )
-    }
-}
+
+});
