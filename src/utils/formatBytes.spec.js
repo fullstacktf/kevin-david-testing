@@ -16,9 +16,7 @@ function assertEquals(result, expectedResult) {
     }
 }*/
 
-
 describe("formatBytes", () => {
-
     it("formats in MB", () => {
         const result1 = formatBytes(900);
         expect(result1).toEqual("900MB");
@@ -38,5 +36,4 @@ describe("formatBytes", () => {
         const result1 = formatBytes(1234567);
         expect(result1).toEqual("1TB 234GB 567MB");
     });
-
 });

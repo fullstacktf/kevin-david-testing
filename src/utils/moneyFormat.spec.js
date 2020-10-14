@@ -15,6 +15,4 @@ describe("formatMoney", () => {
         const result1 = moneyFormat(9500.95);
         expect(result1).toEqual("$9500.95");
     });
-
-
 });

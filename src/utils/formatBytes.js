@@ -14,7 +14,9 @@ function formatBytes(num) {
         if (content[index] != undefined) gb += content[index] + "";
     }
 
-    for (let index = content.length - 7; index >= content.length - 11; index--) {
+    for (
+        let index = content.length - 7; index >= content.length - 11; index--
+    ) {
         if (content[index] != undefined) tb += content[index] + "";
     }
 
