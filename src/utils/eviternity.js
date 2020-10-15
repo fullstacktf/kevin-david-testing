@@ -1,9 +1,11 @@
 function eviternity(a, b) {
+    let cuant = 0;
     for (let index = a; index <= b; index++) {
         if (checkNumber(index)) {
-            console.log(index);
+            cuant++;
         }
     }
+    return cuant;
 }
 
 function checkNumber(num) {
